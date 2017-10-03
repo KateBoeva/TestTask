@@ -13,11 +13,13 @@ body {
 .header {
     background: #dcdcdc;
     height: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header__content {
     margin: 0 auto;
-    width: 968px;
+    width: 980px;
     display: flex;
     justify-content: space-between;
 }
@@ -62,11 +64,13 @@ body {
     height: 72px;
     z-index: 7;
     position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .menu__content {
     margin: 0 auto;
-    width: 968px;
+    width: 980px;
     display: flex;
     justify-content: space-between;
     font-size: 30px;
@@ -108,9 +112,222 @@ body {
     cursor: pointer;
     z-index: 10;
 }
+
 .slider-arrow--left {
     left: 13%;
 }
+
 .slider-arrow--right {
     right: 13%;
 }
+
+.content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content__content {
+    margin: 0 auto;
+    width: 980px;
+    padding: 10px;
+}
+
+.content__content--way {
+    width: auto;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.content__content--way div {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.content__content--way a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #767676;
+}
+
+.content__content--way a:last-child {
+    text-decoration: none;
+    cursor: default;
+}
+
+.content__content--catalog {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__content--catalog__menu-list a{
+    font-size: 18px;
+    color: #767676;
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.menu-list__sub-menu li {
+    list-style: disc;
+    margin-left: 25px;
+    line-height: 18px;
+}
+
+.catalog__menu-list--sub-menu {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    transition: height 0.5s;
+}
+
+.menu-list__sub-menu {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-list__sub-menu--item {
+    color: #8d8d8d;
+}
+
+.menu-list__sub-menu--item:hover {
+    text-decoration: underline;
+    color: #010101;
+    cursor: pointer;
+}
+
+.content__content--catalog__menu-list > li {
+    list-style: none;
+}
+
+.content__content--pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content__content--pagination a {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.content__content--pagination a:hover {
+    font-weight: 600;
+}
+
+.catalog__menu-list--price-list {
+    color: #000;
+    font-weight: 600;
+    margin: 105px auto 0;
+}
+
+.content__content--catalog__menu-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content__content--catalog__menu-items {
+    width: 767px;
+}
+
+.content__container--menu-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog__menu-item {
+    width: 243px;
+    height: 380px;
+    background: #dcdcdc;
+    padding: 17px;
+    margin: 6px;
+}
+
+.catalog__menu-item--image {
+    height: 210px;
+    width: 210px;
+    background: #ffffff;
+}
+
+.catalog__menu-item--description {
+    width: 210px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #7e7e7e;
+}
+
+.catalog__menu-item--foot {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__menu-item--foot__price {
+    color: #444444;
+    font-size: 28px;
+}
+
+.catalog__menu-item--foot__basket {
+    cursor: pointer;
+}
+
+.content__content--hr {
+    margin-top: 60px;
+}
+
+.content__content--catalog__textareas {
+    display: flex;
+    justify-content: space-between;
+    color: #767676;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+.content__catalog--textarea {
+    width: 365px;
+}
+
+.footer {
+    background: #767676;
+    color: #ffffff;
+    height: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+}
+
+.footer__content {
+    margin: 0 auto;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+    width: 230px;
+}
+
+.footer__logo-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item--text {
+    margin-left: 10px;
+}
+
+.footer__menu {
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+}
+
+.footer__menu a {
+    text-decoration: underline;
+}
+
