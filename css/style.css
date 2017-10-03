@@ -1,0 +1,116 @@
+@import "reset.css";
+@import "fonts.css";
+
+div, section ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+}
+
+.header {
+    background: #dcdcdc;
+    height: 230px;
+}
+
+.header__content {
+    margin: 0 auto;
+    width: 968px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content--logo img{
+    width: 275px;
+    height: 100px;
+    margin-top: 65px;
+}
+
+.header__content--info {
+    margin-top: 45px;
+}
+
+.header__content--info__phones {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    color: #7d7d7d;
+    /*padding-bottom: 22px;*/
+}
+
+.header__content--info__phones div:nth-child(1) {
+    margin-bottom: 7px;
+}
+
+.header__content--info__link {
+    font-size: 24px;
+    color: #767676;
+    margin-top: 10px;
+}
+
+.header__content--info__link a {
+    border-bottom: 2px dashed #767676;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu {
+    background: #777777;
+    color: #ffffff;
+    height: 72px;
+    z-index: 7;
+    position: relative;
+}
+
+.menu__content {
+    margin: 0 auto;
+    width: 968px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.menu__content a, .menu__content div {
+    margin-top: 20px;
+}
+
+.menu__content a:hover {
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.slider__content {
+    position: relative;
+    z-index: 5;
+}
+
+.slider__content--frame {
+    display: none;
+}
+
+.slider__content--frame img {
+    margin: -70px auto 0;
+
+}
+
+.slider__content--frame_active {
+    display: flex;
+}
+
+.slider-arrow {
+    width: 16px;
+    height: 40px;
+    position: absolute;
+    top: 56%;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.slider-arrow--left {
+    left: 13%;
+}
+.slider-arrow--right {
+    right: 13%;
+}
