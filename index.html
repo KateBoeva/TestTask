@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Test Task</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link type="text/html" rel="section">
 </head>
 <body>
     <section class="header">
@@ -17,9 +18,8 @@
                     <div>+7(499) 777-77-77</div>
                 </div>
                 <div class="header__content--info__link">
-                    <a>Обратная связь</a>
+                    <a href="#modal" onclick="openWindow()">Обратная связь</a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -168,7 +168,7 @@
                     <img src="img/footer_logo.png">
                 </div>
                 <div class="footer__item--text">
-                    Разработка сайта —
+                    <span class="underline_text">Разработка сайта</span> —
                     компания «Пиксель Плюс»
                 </div>
             </div>
@@ -176,7 +176,25 @@
 
     </section>
     <section class="feedback">
+        <div id="modal" class="modal-window">
+            <h1 class="feedback__header">Обратная связь</h1>
+            <form class="feedback__form" method="post" onsubmit="return checkForm()">
+                <label for="name">Ваше имя *</label>
+                <input id="name" type="text">
+                <label for="phone">Телефон *</label>
+                <input id="phone" type="number">
+                <label for="email">E-mail *</label>
+                <input id="email" type="email">
+                <label for="message">Сообщение</label>
+                <textarea id="message"></textarea>
+                <input id="btn_submit" type="submit" value="Отправить">
+                <script src="js/empty.js"></script>
+            </form>
+            <div id="close" class="feedback__close" onclick="closeWindow()">✕</div>
+        </div>
 
     </section>
+    <div id="dark_back" class="dark"></div>
+    <script src="js/modal.js"></script>
 </body>
 </html>
