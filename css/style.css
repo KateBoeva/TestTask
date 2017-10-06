@@ -99,6 +99,8 @@ body {
 
 .slider__content--frame img {
     margin: -70px auto 0;
+
+    transform: translate(500px,0px) rotate(3deg);
 }
 
 .slider__content--frame_active {
@@ -336,6 +338,7 @@ body {
 
 .modal-window {
     display: none;
+    /*transition: 0.3s;*/
     background: #ffffff;
     position: fixed;
     left: 40%;
@@ -345,6 +348,24 @@ body {
     width: 465px;
     height: 576px;
     z-index: 110;
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: .5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.fadeOut{
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+    animation-duration: .5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 .dark {
@@ -442,4 +463,14 @@ body {
 
 .empty_field {
     box-shadow: inset 0 0 15px red;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0.0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
