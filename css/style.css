@@ -99,8 +99,6 @@ body {
 
 .slider__content--frame img {
     margin: -70px auto 0;
-
-    transform: translate(500px,0px) rotate(3deg);
 }
 
 .slider__content--frame_active {
